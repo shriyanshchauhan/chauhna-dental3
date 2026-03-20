@@ -1,4 +1,4 @@
-import { Tooth, Zap } from "lucide-react";
+import { Smile, Sparkles } from "lucide-react";
 
 export default function ServicesSection() {
   const dentalServices = [
@@ -66,12 +66,12 @@ export default function ServicesSection() {
           <ServiceCard
             title="Dental Services"
             services={dentalServices}
-            icon={Tooth}
+            icon={Smile}
           />
           <ServiceCard
             title="Cosmetic & Laser"
             services={cosmeticServices}
-            icon={Zap}
+            icon={Sparkles}
           />
         </div>
 
