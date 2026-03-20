@@ -10,3 +10,19 @@
 export interface DemoResponse {
   message: string;
 }
+
+/**
+ * Google Reviews API types
+ */
+export interface GoogleReview {
+  author_name: string;
+  rating: number;
+  text: string;
+  time: number;
+  relative_time_description: string;
+}
+
+export interface GoogleReviewsResponse {
+  reviews: GoogleReview[];
+  error?: string;
+}
