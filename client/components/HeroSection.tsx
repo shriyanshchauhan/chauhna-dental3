@@ -7,10 +7,6 @@ import { Button } from "@/components/ui/button";
 import { Phone, Calendar } from "lucide-react";
 
 export default function HeroSection() {
-  const scrollToAppointment = () => {
-    const element = document.getElementById("appointment-section");
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
 
   const slides = [
     {
@@ -68,13 +64,15 @@ export default function HeroSection() {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-                  <Button
-                    onClick={scrollToAppointment}
-                    className="bg-teal-500 hover:bg-teal-600 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                  <a
+                    href="https://wa.me/919412005185?text=Hi%20Dr.%20Chauhan!%20I%20would%20like%20to%20book%20a%20free%20consultation."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-green-500 hover:bg-green-600 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <Calendar className="w-5 h-5" />
-                    Book Appointment
-                  </Button>
+                    Book Free Consultation
+                  </a>
                   <a
                     href="tel:+919412005185"
                     className="bg-white hover:bg-gray-100 text-teal-600 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"

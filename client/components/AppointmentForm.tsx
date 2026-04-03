@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Calendar, Phone, Mail, User, AlertCircle, CheckCircle } from "lucide-react";
+import { Calendar, Phone, Mail, User, AlertCircle, CheckCircle, MessageCircle } from "lucide-react";
 
 export default function AppointmentForm() {
   const [formData, setFormData] = useState({
@@ -110,12 +110,28 @@ export default function AppointmentForm() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-            Book Your Appointment
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-poppins font-bold text-slate-900 mb-4">
+            Book Your Free Consultation
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto font-poppins mb-8">
             Schedule your consultation with Dr. Ashok Chauhan today
           </p>
+
+          {/* Primary WhatsApp CTA */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://wa.me/919412005185?text=Hi%20Dr.%20Chauhan!%20I%20would%20like%20to%20book%20a%20free%20consultation."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-poppins font-bold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg hover:shadow-2xl"
+            >
+              <MessageCircle className="w-6 h-6" />
+              Chat on WhatsApp Now
+            </a>
+            <p className="text-gray-600 font-poppins text-sm sm:text-base flex items-center justify-center">
+              or fill the form below
+            </p>
+          </div>
         </div>
 
         {/* Form Card */}
@@ -149,7 +165,7 @@ export default function AppointmentForm() {
             {/* Name and Phone Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-semibold text-slate-900 mb-2">
+                <label className="block text-sm font-poppins font-semibold text-slate-900 mb-2">
                   <User className="inline w-4 h-4 mr-2" />
                   Full Name *
                 </label>
@@ -165,7 +181,7 @@ export default function AppointmentForm() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-slate-900 mb-2">
+                <label className="block text-sm font-poppins font-semibold text-slate-900 mb-2">
                   <Phone className="inline w-4 h-4 mr-2" />
                   Phone Number *
                 </label>
@@ -183,7 +199,7 @@ export default function AppointmentForm() {
 
             {/* Email Row */}
             <div>
-              <label className="block text-sm font-semibold text-slate-900 mb-2">
+              <label className="block text-sm font-poppins font-semibold text-slate-900 mb-2">
                 <Mail className="inline w-4 h-4 mr-2" />
                 Email (Optional)
               </label>
@@ -200,7 +216,7 @@ export default function AppointmentForm() {
             {/* Date and Time Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-semibold text-slate-900 mb-2">
+                <label className="block text-sm font-poppins font-semibold text-slate-900 mb-2">
                   <Calendar className="inline w-4 h-4 mr-2" />
                   Preferred Date
                 </label>
@@ -214,7 +230,7 @@ export default function AppointmentForm() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-slate-900 mb-2">
+                <label className="block text-sm font-poppins font-semibold text-slate-900 mb-2">
                   Preferred Time
                 </label>
                 <input
@@ -229,7 +245,7 @@ export default function AppointmentForm() {
 
             {/* Treatment Type */}
             <div>
-              <label className="block text-sm font-semibold text-slate-900 mb-2">
+              <label className="block text-sm font-poppins font-semibold text-slate-900 mb-2">
                 Treatment Type
               </label>
               <select
@@ -249,7 +265,7 @@ export default function AppointmentForm() {
 
             {/* Message */}
             <div>
-              <label className="block text-sm font-semibold text-slate-900 mb-2">
+              <label className="block text-sm font-poppins font-semibold text-slate-900 mb-2">
                 Additional Message
               </label>
               <textarea
@@ -264,7 +280,7 @@ export default function AppointmentForm() {
 
             {/* Trust Note */}
             <div className="bg-teal-50 border border-teal-200 rounded-lg p-4">
-              <p className="text-sm text-teal-900">
+              <p className="text-sm text-teal-900 font-poppins">
                 <span className="font-semibold">✓ We will confirm</span> your
                 appointment via call or WhatsApp
               </p>
@@ -274,17 +290,17 @@ export default function AppointmentForm() {
             <Button
               type="submit"
               disabled={loading}
-              className="w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 sm:py-4 text-base sm:text-lg rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-teal-500 hover:bg-teal-600 text-white font-poppins font-bold py-3 sm:py-4 text-base sm:text-lg rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
             >
-              {loading ? "Submitting..." : "Book Appointment"}
+              {loading ? "Submitting..." : "Send Appointment Request"}
             </Button>
 
             {/* Alternative Contact */}
             <div className="border-t border-gray-200 pt-6 text-center">
-              <p className="text-slate-700 mb-4">Prefer to call directly?</p>
+              <p className="text-slate-700 mb-4 font-poppins">Prefer to call directly?</p>
               <a
                 href="tel:+919412005185"
-                className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-semibold text-lg"
+                className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-poppins font-bold text-lg"
               >
                 <Phone className="w-5 h-5" />
                 +91 9412005185

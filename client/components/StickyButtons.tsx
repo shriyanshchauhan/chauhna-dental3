@@ -30,11 +30,11 @@ export default function StickyButtons() {
     <>
       {/* WhatsApp Floating Button - Always visible on right side */}
       <a
-        href="https://wa.me/919412005185"
+        href="https://wa.me/919412005185?text=Hi%20Dr.%20Chauhan!%20I%20would%20like%20to%20book%20a%20free%20consultation."
         target="_blank"
         rel="noopener noreferrer"
         title="Chat on WhatsApp"
-        className="fixed bottom-24 md:bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-50 hover:scale-110"
+        className="fixed bottom-24 md:bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-50 hover:scale-110 animate-pulse md:animate-none"
       >
         <MessageCircle className="w-6 h-6 md:w-8 md:h-8" />
       </a>
