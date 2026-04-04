@@ -12,15 +12,15 @@ export default function BeforeAfterSection() {
   const transformations: Transformation[] = [
     {
       before:
-        "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F919f02c22b9d4d1db33efc6cb3525bf5?format=webp&width=800&height=1200",
+        "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F0738500b13194f80be75ea281e939805?format=webp&width=800&height=1200",
       after:
         "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F0e760fa2b1864ff58b5f28cd0c524b36?format=webp&width=800&height=1200",
-      title: "Complete Smile Transformation",
+      title: "Complete Smile Restoration",
       treatment: "Dental Implants & Smile Design",
     },
     {
       before:
-        "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F40fa5e1b7bb647638a5ddda157bd17e2?format=webp&width=800&height=1200",
+        "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F919f02c22b9d4d1db33efc6cb3525bf5?format=webp&width=800&height=1200",
       after:
         "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F0e760fa2b1864ff58b5f28cd0c524b36?format=webp&width=800&height=1200",
       title: "Teeth Whitening Excellence",
