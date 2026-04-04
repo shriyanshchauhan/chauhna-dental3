@@ -123,7 +123,7 @@ export default function AppointmentForm() {
               href="https://wa.me/919412005185?text=Hi%20Dr.%20Chauhan!%20I%20would%20like%20to%20book%20a%20free%20consultation."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-poppins font-bold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg hover:shadow-2xl"
+              className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-poppins font-bold py-4 px-8 rounded-lg transition-all duration-300 text-lg shadow-lg hover:shadow-2xl"
             >
               <MessageCircle className="w-6 h-6" />
               Chat on WhatsApp Now
@@ -175,7 +175,7 @@ export default function AppointmentForm() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent outline-none transition-all"
                   placeholder="Your name"
                 />
               </div>
@@ -191,7 +191,7 @@ export default function AppointmentForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent outline-none transition-all"
                   placeholder="+91 98765 43210"
                 />
               </div>
@@ -208,7 +208,7 @@ export default function AppointmentForm() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent outline-none transition-all"
                 placeholder="your@email.com"
               />
             </div>
@@ -225,7 +225,7 @@ export default function AppointmentForm() {
                   name="date"
                   value={formData.date}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent outline-none transition-all"
                 />
               </div>
 
@@ -238,7 +238,7 @@ export default function AppointmentForm() {
                   name="time"
                   value={formData.time}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent outline-none transition-all"
                 />
               </div>
             </div>
@@ -252,7 +252,7 @@ export default function AppointmentForm() {
                 name="treatment"
                 value={formData.treatment}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent outline-none transition-all"
               >
                 <option value="">Select a treatment...</option>
                 {treatments.map((t) => (
@@ -273,14 +273,14 @@ export default function AppointmentForm() {
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all resize-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent outline-none transition-all resize-none"
                 placeholder="Tell us about your needs..."
               />
             </div>
 
             {/* Trust Note */}
-            <div className="bg-teal-50 border border-teal-200 rounded-lg p-4">
-              <p className="text-sm text-teal-900 font-poppins">
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <p className="text-sm text-blue-900 font-poppins">
                 <span className="font-semibold">✓ We will confirm</span> your
                 appointment via call or WhatsApp
               </p>
@@ -290,7 +290,7 @@ export default function AppointmentForm() {
             <Button
               type="submit"
               disabled={loading}
-              className="w-full bg-teal-500 hover:bg-teal-600 text-white font-poppins font-bold py-3 sm:py-4 text-base sm:text-lg rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
+              className="w-full bg-blue-900 hover:bg-blue-950 text-white font-poppins font-bold py-3 sm:py-4 text-base sm:text-lg rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
             >
               {loading ? "Submitting..." : "Send Appointment Request"}
             </Button>

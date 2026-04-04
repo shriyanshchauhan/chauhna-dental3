@@ -104,22 +104,22 @@ export default function BeforeAfterSection() {
 
             {/* Slider Handle */}
             <div
-              className="absolute top-0 bottom-0 w-1 bg-teal-400 transition-all duration-150"
+              className="absolute top-0 bottom-0 w-1 bg-red-600 transition-all duration-150"
               style={{ left: `${sliderPos}%` }}
             >
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-12 h-12 shadow-lg flex items-center justify-center">
                 <div className="flex gap-1">
-                  <ChevronLeft className="w-5 h-5 text-teal-500" />
-                  <ChevronRight className="w-5 h-5 text-teal-500" />
+                  <ChevronLeft className="w-5 h-5 text-red-600" />
+                  <ChevronRight className="w-5 h-5 text-red-600" />
                 </div>
               </div>
             </div>
 
             {/* Before/After Labels */}
-            <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-lg font-semibold text-sm">
+            <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-lg font-semibold text-sm">
               Before
             </div>
-            <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-lg font-semibold text-sm">
+            <div className="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-lg font-semibold text-sm">
               After
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function BeforeAfterSection() {
               <h3 className="text-2xl sm:text-3xl font-poppins font-bold text-slate-900 mb-2">
                 {current.title}
               </h3>
-              <p className="text-lg text-teal-600 font-poppins font-semibold mb-4">
+              <p className="text-lg text-red-600 font-poppins font-semibold mb-4">
                 {current.treatment}
               </p>
               <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
@@ -154,7 +154,7 @@ export default function BeforeAfterSection() {
                   "Boosted confidence",
                 ].map((benefit, idx) => (
                   <li key={idx} className="flex items-center gap-3">
-                    <span className="inline-block w-2 h-2 bg-teal-500 rounded-full" />
+                    <span className="inline-block w-2 h-2 bg-red-600 rounded-full" />
                     <span className="text-gray-700 font-poppins">{benefit}</span>
                   </li>
                 ))}
@@ -165,13 +165,13 @@ export default function BeforeAfterSection() {
             <div className="flex gap-4 pt-4">
               <button
                 onClick={prev}
-                className="p-3 rounded-full bg-teal-100 hover:bg-teal-200 text-teal-600 transition-colors duration-300"
+                className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 text-blue-900 transition-colors duration-300"
               >
                 <ChevronLeft className="w-6 h-6" />
               </button>
               <button
                 onClick={next}
-                className="p-3 rounded-full bg-teal-100 hover:bg-teal-200 text-teal-600 transition-colors duration-300"
+                className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 text-blue-900 transition-colors duration-300"
               >
                 <ChevronRight className="w-6 h-6" />
               </button>
@@ -186,7 +186,7 @@ export default function BeforeAfterSection() {
                       setSliderPos(50);
                     }}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      idx === currentIndex ? "bg-teal-500 w-8" : "bg-gray-300"
+                      idx === currentIndex ? "bg-red-600 w-8" : "bg-gray-300"
                     }`}
                   />
                 ))}
@@ -208,7 +208,7 @@ export default function BeforeAfterSection() {
               className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300 animate-fadeIn"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <p className="text-3xl sm:text-4xl font-poppins font-bold text-teal-600 mb-2">
+              <p className="text-3xl sm:text-4xl font-poppins font-bold text-red-600 mb-2">
                 {stat.number}
               </p>
               <p className="text-gray-700 font-poppins text-sm sm:text-base">

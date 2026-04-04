@@ -68,14 +68,14 @@ export default function HeroSection() {
                     href="https://wa.me/919412005185?text=Hi%20Dr.%20Chauhan!%20I%20would%20like%20to%20book%20a%20free%20consultation."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-green-500 hover:bg-green-600 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                    className="bg-red-600 hover:bg-red-700 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
                   >
                     <Calendar className="w-5 h-5" />
                     Book Free Consultation
                   </a>
                   <a
                     href="tel:+919412005185"
-                    className="bg-white hover:bg-gray-100 text-teal-600 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                    className="bg-white hover:bg-gray-100 text-blue-900 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <Phone className="w-5 h-5" />
                     Call Now

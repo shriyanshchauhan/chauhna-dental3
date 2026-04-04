@@ -14,7 +14,7 @@ export default function Index() {
   return (
     <div className="w-full">
       {/* Navigation Header */}
-      <header className="sticky top-0 z-30 bg-white shadow-md border-b-2 border-teal-100">
+      <header className="sticky top-0 z-30 bg-white shadow-md border-b-2 border-blue-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo/Clinic Name */}
@@ -26,31 +26,31 @@ export default function Index() {
             <nav className="hidden md:flex gap-8">
               <a
                 href="/"
-                className="text-slate-700 hover:text-teal-600 font-poppins font-medium transition-colors"
+                className="text-slate-700 hover:text-red-600 font-poppins font-medium transition-colors"
               >
                 Home
               </a>
               <a
                 href="#services"
-                className="text-slate-700 hover:text-teal-600 font-poppins font-medium transition-colors"
+                className="text-slate-700 hover:text-red-600 font-poppins font-medium transition-colors"
               >
                 Services
               </a>
               <a
                 href="#transformations"
-                className="text-slate-700 hover:text-teal-600 font-poppins font-medium transition-colors"
+                className="text-slate-700 hover:text-red-600 font-poppins font-medium transition-colors"
               >
                 Results
               </a>
               <a
                 href="#gallery"
-                className="text-slate-700 hover:text-teal-600 font-poppins font-medium transition-colors"
+                className="text-slate-700 hover:text-red-600 font-poppins font-medium transition-colors"
               >
                 Gallery
               </a>
               <a
                 href="#doctor"
-                className="text-slate-700 hover:text-teal-600 font-poppins font-medium transition-colors"
+                className="text-slate-700 hover:text-red-600 font-poppins font-medium transition-colors"
               >
                 Doctor
               </a>
@@ -61,7 +61,7 @@ export default function Index() {
               href="https://wa.me/919412005185?text=Hi%20Dr.%20Chauhan!%20I%20would%20like%20to%20book%20a%20free%20consultation."
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-poppins font-semibold transition-colors duration-300"
+              className="hidden sm:inline-block bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-poppins font-semibold transition-colors duration-300"
             >
               WhatsApp
             </a>
