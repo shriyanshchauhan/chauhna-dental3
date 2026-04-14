@@ -34,14 +34,17 @@ export default function StickyButtons() {
         target="_blank"
         rel="noopener noreferrer"
         title="Chat on WhatsApp"
-        className="fixed bottom-24 md:bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-50 hover:scale-110 animate-pulse md:animate-none"
+        className="fixed bottom-24 md:bottom-6 right-6 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-50 hover:scale-110 animate-pulse md:animate-none"
+        style={{ backgroundColor: '#0ea5a4' }}
+        onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#0d8e8d')}
+        onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#0ea5a4')}
       >
         <MessageCircle className="w-6 h-6 md:w-8 md:h-8" />
       </a>
 
       {/* Mobile Sticky Bar - Only on small screens */}
       {isMobile && isVisible && (
-        <div className="fixed bottom-0 left-0 right-0 bg-slate-900 border-t-2 border-teal-500 shadow-2xl z-40">
+        <div className="fixed bottom-0 left-0 right-0 bg-slate-900 border-t-2 shadow-2xl z-40" style={{ borderTopColor: '#0ea5a4' }}>
           <div className="flex gap-0 h-16">
             {/* Call Button */}
             <a
