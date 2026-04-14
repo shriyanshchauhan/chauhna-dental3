@@ -154,7 +154,7 @@ export default function TestimonialsSection() {
 
                   {/* Treatment Badge */}
                   <div className="mt-4">
-                    <span className="inline-block px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-poppins font-semibold">
+                    <span className="inline-block px-3 py-1 rounded-full text-xs font-poppins font-semibold" style={{ backgroundColor: 'rgba(14, 165, 164, 0.1)', color: '#0ea5a4' }}>
                       {testimonial.treatment}
                     </span>
                   </div>
@@ -167,7 +167,10 @@ export default function TestimonialsSection() {
           <div className="flex items-center justify-center gap-4 mt-10 sm:mt-12">
             <button
               onClick={prevSlide}
-              className="p-3 rounded-full bg-teal-100 hover:bg-teal-200 text-teal-600 transition-colors duration-300"
+              className="p-3 rounded-full transition-colors duration-300"
+              style={{ backgroundColor: 'rgba(14, 165, 164, 0.15)', color: '#0ea5a4' }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(14, 165, 164, 0.25)')}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'rgba(14, 165, 164, 0.15)')}
             >
               <span className="text-xl">←</span>
             </button>
@@ -178,16 +181,21 @@ export default function TestimonialsSection() {
                 <button
                   key={idx}
                   onClick={() => setCurrentIndex(idx)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                    idx === currentIndex ? "bg-teal-500 w-8" : "bg-gray-300"
-                  }`}
+                  className="w-2.5 h-2.5 rounded-full transition-all duration-300"
+                  style={{
+                    backgroundColor: idx === currentIndex ? '#0ea5a4' : '#d1d5db',
+                    width: idx === currentIndex ? '2rem' : '0.625rem'
+                  }}
                 />
               ))}
             </div>
 
             <button
               onClick={nextSlide}
-              className="p-3 rounded-full bg-teal-100 hover:bg-teal-200 text-teal-600 transition-colors duration-300"
+              className="p-3 rounded-full transition-colors duration-300"
+              style={{ backgroundColor: 'rgba(14, 165, 164, 0.15)', color: '#0ea5a4' }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(14, 165, 164, 0.25)')}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'rgba(14, 165, 164, 0.15)')}
             >
               <span className="text-xl">→</span>
             </button>
@@ -195,10 +203,10 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Trust Section */}
-        <div className="mt-16 sm:mt-20 bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-8 sm:p-12 border-2 border-teal-200">
+        <div className="mt-16 sm:mt-20 rounded-2xl p-8 sm:p-12 border-2" style={{ backgroundColor: 'rgba(14, 165, 164, 0.08)', borderColor: 'rgba(14, 165, 164, 0.3)' }}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl font-poppins font-bold text-teal-600 mb-2">
+              <div className="text-4xl sm:text-5xl font-poppins font-bold mb-2" style={{ color: '#0ea5a4' }}>
                 4.9★
               </div>
               <p className="text-slate-700 font-poppins font-semibold">
@@ -206,7 +214,7 @@ export default function TestimonialsSection() {
               </p>
             </div>
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl font-poppins font-bold text-teal-600 mb-2">
+              <div className="text-4xl sm:text-5xl font-poppins font-bold mb-2" style={{ color: '#0ea5a4' }}>
                 2000+
               </div>
               <p className="text-slate-700 font-poppins font-semibold">
@@ -214,7 +222,7 @@ export default function TestimonialsSection() {
               </p>
             </div>
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl font-poppins font-bold text-teal-600 mb-2">
+              <div className="text-4xl sm:text-5xl font-poppins font-bold mb-2" style={{ color: '#0ea5a4' }}>
                 98%
               </div>
               <p className="text-slate-700 font-poppins font-semibold">

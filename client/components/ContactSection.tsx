@@ -49,11 +49,14 @@ export default function ContactSection() {
               return (
                 <div
                   key={index}
-                  className="bg-gray-50 rounded-xl p-6 sm:p-8 border border-gray-200 hover:border-teal-500 transition-colors duration-300"
+                  className="bg-gray-50 rounded-xl p-6 sm:p-8 border border-gray-200 transition-colors duration-300"
+                  style={{ '--hover-border': '#0ea5a4' } as React.CSSProperties}
+                  onMouseEnter={(e) => (e.currentTarget.style.borderColor = '#0ea5a4')}
+                  onMouseLeave={(e) => (e.currentTarget.style.borderColor = '#e5e7eb')}
                 >
                   <div className="flex gap-4">
                     <div className="flex-shrink-0">
-                      <Icon className="w-6 h-6 text-teal-500 mt-1" />
+                      <Icon className="w-6 h-6 mt-1" style={{ color: '#0ea5a4' }} />
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 text-lg mb-2">
@@ -70,7 +73,10 @@ export default function ContactSection() {
                               ? "noopener noreferrer"
                               : undefined
                           }
-                          className="text-slate-700 hover:text-teal-600 transition-colors duration-200 font-medium"
+                          className="text-slate-700 transition-colors duration-200 font-medium"
+                          style={{ color: '#1f2937' }}
+                          onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                          onMouseLeave={(e) => (e.currentTarget.style.color = '#1f2937')}
                         >
                           {info.content}
                         </a>

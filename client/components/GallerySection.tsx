@@ -109,9 +109,10 @@ export default function GallerySection() {
               }}
               className={`px-5 sm:px-6 py-2 sm:py-3 rounded-full font-poppins font-semibold transition-all duration-300 ${
                 filter === cat
-                  ? "bg-teal-500 text-white shadow-lg"
+                  ? "text-white shadow-lg"
                   : "bg-gray-100 text-slate-700 hover:bg-gray-200"
               }`}
+              style={filter === cat ? { backgroundColor: '#0ea5a4' } : {}}
             >
               {cat}
             </button>

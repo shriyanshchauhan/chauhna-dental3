@@ -127,27 +127,37 @@ export default function Index() {
               <h4 className="text-lg font-poppins font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="/" className="hover:text-teal-400 transition-colors font-poppins">
+                  <a href="/" className="transition-colors font-poppins" style={{ '--hover-color': '#0ea5a4' } as React.CSSProperties}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = '#9ca3af')}>
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-teal-400 transition-colors font-poppins">
+                  <a href="#services" className="transition-colors font-poppins"
+                    onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = '#9ca3af')}>
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#transformations" className="hover:text-teal-400 transition-colors font-poppins">
+                  <a href="#transformations" className="transition-colors font-poppins"
+                    onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = '#9ca3af')}>
                     Results
                   </a>
                 </li>
                 <li>
-                  <a href="#gallery" className="hover:text-teal-400 transition-colors font-poppins">
+                  <a href="#gallery" className="transition-colors font-poppins"
+                    onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = '#9ca3af')}>
                     Gallery
                   </a>
                 </li>
                 <li>
-                  <a href="#doctor" className="hover:text-teal-400 transition-colors font-poppins">
+                  <a href="#doctor" className="transition-colors font-poppins"
+                    onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = '#9ca3af')}>
                     About Doctor
                   </a>
                 </li>
@@ -161,7 +171,9 @@ export default function Index() {
                 <li>
                   <a
                     href="tel:+919412005185"
-                    className="hover:text-teal-400 transition-colors font-poppins"
+                    className="transition-colors font-poppins"
+                    onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = '#9ca3af')}
                   >
                     +91 9412005185
                   </a>
@@ -169,7 +181,9 @@ export default function Index() {
                 <li>
                   <a
                     href="mailto:shriyansh1c0@gmail.com"
-                    className="hover:text-teal-400 transition-colors font-poppins"
+                    className="transition-colors font-poppins"
+                    onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = '#9ca3af')}
                   >
                     shriyansh1c0@gmail.com
                   </a>
@@ -185,10 +199,14 @@ export default function Index() {
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
             <p className="font-poppins">&copy; 2024 Chauhan's Dental & Cosmo Laser Centre. All rights reserved.</p>
             <div className="flex gap-4 mt-4 md:mt-0">
-              <a href="#" className="hover:text-teal-400 transition-colors font-poppins">
+              <a href="#" className="transition-colors font-poppins"
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#9ca3af')}>
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-teal-400 transition-colors font-poppins">
+              <a href="#" className="transition-colors font-poppins"
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#9ca3af')}>
                 Terms & Conditions
               </a>
             </div>

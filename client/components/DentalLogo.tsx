@@ -13,7 +13,7 @@ export default function DentalLogo() {
         <h1 className="text-lg font-poppins font-bold text-slate-900">
           Chauhan's Dental
         </h1>
-        <p className="text-xs font-poppins text-teal-600 font-semibold">
+        <p className="text-xs font-poppins font-semibold" style={{ color: '#0ea5a4' }}>
           & Cosmo Laser
         </p>
       </div>

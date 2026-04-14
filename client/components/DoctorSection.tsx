@@ -37,7 +37,7 @@ export default function DoctorSection() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-2">
               Dr. Ashok Chauhan
             </h2>
-            <p className="text-lg sm:text-xl text-teal-600 font-semibold mb-6">
+            <p className="text-lg sm:text-xl font-semibold mb-6" style={{ color: '#0ea5a4' }}>
               BDS, Advanced Cosmetic & Laser Specialist
             </p>
 
@@ -55,7 +55,7 @@ export default function DoctorSection() {
                 return (
                   <div key={index} className="flex gap-4">
                     <div className="flex-shrink-0">
-                      <Icon className="w-6 h-6 text-teal-500 mt-1" />
+                      <Icon className="w-6 h-6 mt-1" style={{ color: '#0ea5a4' }} />
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 text-lg">
@@ -71,7 +71,7 @@ export default function DoctorSection() {
             </div>
 
             {/* Special Focus */}
-            <div className="bg-teal-50 rounded-xl p-6 border-l-4 border-teal-500">
+            <div className="rounded-xl p-6 border-l-4" style={{ backgroundColor: 'rgba(14, 165, 164, 0.08)', borderLeftColor: '#0ea5a4' }}>
               <p className="text-slate-900 font-semibold mb-2">
                 Special Focus:
               </p>

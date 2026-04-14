@@ -29,7 +29,7 @@ export default function ServicesSection() {
   }) => (
     <div className="bg-white rounded-2xl p-8 sm:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
       <div className="flex items-center gap-3 mb-6">
-        <Icon className="w-8 h-8 text-teal-500" />
+        <Icon className="w-8 h-8" style={{ color: '#0ea5a4' }} />
         <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">
           {title}
         </h3>
@@ -40,7 +40,7 @@ export default function ServicesSection() {
             key={index}
             className="flex items-start gap-3 text-slate-700 text-base sm:text-lg"
           >
-            <span className="inline-block w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0" />
+            <span className="inline-block w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: '#0ea5a4' }} />
             <span>{service}</span>
           </li>
         ))}
@@ -76,21 +76,21 @@ export default function ServicesSection() {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-12 sm:mt-16 bg-white rounded-2xl p-8 sm:p-10 border-2 border-teal-500">
+        <div className="mt-12 sm:mt-16 bg-white rounded-2xl p-8 sm:p-10 border-2" style={{ borderColor: '#0ea5a4' }}>
           <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
             Why Choose Us?
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div>
-              <p className="text-4xl font-bold text-teal-500 mb-2">30+</p>
+              <p className="text-4xl font-bold mb-2" style={{ color: '#0ea5a4' }}>30+</p>
               <p className="text-slate-700 font-semibold">Years of Experience</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-teal-500 mb-2">5000+</p>
+              <p className="text-4xl font-bold mb-2" style={{ color: '#0ea5a4' }}>5000+</p>
               <p className="text-slate-700 font-semibold">Happy Patients</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-teal-500 mb-2">100%</p>
+              <p className="text-4xl font-bold mb-2" style={{ color: '#0ea5a4' }}>100%</p>
               <p className="text-slate-700 font-semibold">
                 Painless Treatment
               </p>
