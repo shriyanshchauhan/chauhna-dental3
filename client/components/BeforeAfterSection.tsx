@@ -12,9 +12,9 @@ export default function BeforeAfterSection() {
   const transformations: Transformation[] = [
     {
       before:
-        "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F0738500b13194f80be75ea281e939805?format=webp&width=800&height=1200",
+        "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2Fe6164a4c67644664bd5510cf4d4be1a0?format=webp&width=800&height=1200",
       after:
-        "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2Fb5072e5c535948eb880e017af0323113?format=webp&width=800&height=1200",
+        "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F318d0e713a6d4dadab2e94df7e5df565?format=webp&width=800&height=1200",
       title: "Complete Smile Restoration",
       treatment: "Dental Implants & Smile Design",
     },
