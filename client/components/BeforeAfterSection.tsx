@@ -109,14 +109,14 @@ export default function BeforeAfterSection() {
             >
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-12 h-12 shadow-lg flex items-center justify-center">
                 <div className="flex gap-1">
-                  <ChevronLeft className="w-5 h-5 text-red-600" />
-                  <ChevronRight className="w-5 h-5 text-red-600" />
+                  <ChevronLeft className="w-5 h-5" style={{ color: '#0ea5a4' }} />
+                  <ChevronRight className="w-5 h-5" style={{ color: '#0ea5a4' }} />
                 </div>
               </div>
             </div>
 
             {/* Before/After Labels */}
-            <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-lg font-semibold text-sm">
+            <div className="absolute top-4 left-4 text-white px-3 py-1 rounded-lg font-semibold text-sm" style={{ backgroundColor: '#0ea5a4' }}>
               Before
             </div>
             <div className="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-lg font-semibold text-sm">
@@ -130,7 +130,7 @@ export default function BeforeAfterSection() {
               <h3 className="text-2xl sm:text-3xl font-poppins font-bold text-slate-900 mb-2">
                 {current.title}
               </h3>
-              <p className="text-lg text-red-600 font-poppins font-semibold mb-4">
+              <p className="text-lg font-poppins font-semibold mb-4" style={{ color: '#0ea5a4' }}>
                 {current.treatment}
               </p>
               <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
@@ -154,7 +154,7 @@ export default function BeforeAfterSection() {
                   "Boosted confidence",
                 ].map((benefit, idx) => (
                   <li key={idx} className="flex items-center gap-3">
-                    <span className="inline-block w-2 h-2 bg-red-600 rounded-full" />
+                    <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: '#0ea5a4' }} />
                     <span className="text-gray-700 font-poppins">{benefit}</span>
                   </li>
                 ))}
@@ -185,9 +185,11 @@ export default function BeforeAfterSection() {
                       setCurrentIndex(idx);
                       setSliderPos(50);
                     }}
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      idx === currentIndex ? "bg-red-600 w-8" : "bg-gray-300"
-                    }`}
+                    className="w-2 h-2 rounded-full transition-all duration-300"
+                    style={{
+                      backgroundColor: idx === currentIndex ? '#0ea5a4' : '#d1d5db',
+                      width: idx === currentIndex ? '2rem' : '0.5rem'
+                    }}
                   />
                 ))}
               </div>
@@ -208,7 +210,7 @@ export default function BeforeAfterSection() {
               className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300 animate-fadeIn"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <p className="text-3xl sm:text-4xl font-poppins font-bold text-red-600 mb-2">
+              <p className="text-3xl sm:text-4xl font-poppins font-bold mb-2" style={{ color: '#0ea5a4' }}>
                 {stat.number}
               </p>
               <p className="text-gray-700 font-poppins text-sm sm:text-base">

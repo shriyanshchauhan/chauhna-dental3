@@ -68,7 +68,10 @@ export default function HeroSection() {
                     href="https://wa.me/919412005185?text=Hi%20Dr.%20Chauhan!%20I%20would%20like%20to%20book%20a%20free%20consultation."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-red-600 hover:bg-red-700 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
+                    className="text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg"
+                    style={{ backgroundColor: '#0ea5a4' }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#0d8e8d')}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#0ea5a4')}
                   >
                     <Calendar className="w-5 h-5" />
                     Book Free Consultation

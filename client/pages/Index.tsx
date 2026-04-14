@@ -26,31 +26,41 @@ export default function Index() {
             <nav className="hidden md:flex gap-8">
               <a
                 href="/"
-                className="text-slate-700 hover:text-red-600 font-poppins font-medium transition-colors"
+                className="text-slate-700 font-poppins font-medium transition-colors"
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#374151')}
               >
                 Home
               </a>
               <a
                 href="#services"
-                className="text-slate-700 hover:text-red-600 font-poppins font-medium transition-colors"
+                className="text-slate-700 font-poppins font-medium transition-colors"
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#374151')}
               >
                 Services
               </a>
               <a
                 href="#transformations"
-                className="text-slate-700 hover:text-red-600 font-poppins font-medium transition-colors"
+                className="text-slate-700 font-poppins font-medium transition-colors"
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#374151')}
               >
                 Results
               </a>
               <a
                 href="#gallery"
-                className="text-slate-700 hover:text-red-600 font-poppins font-medium transition-colors"
+                className="text-slate-700 font-poppins font-medium transition-colors"
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#374151')}
               >
                 Gallery
               </a>
               <a
                 href="#doctor"
-                className="text-slate-700 hover:text-red-600 font-poppins font-medium transition-colors"
+                className="text-slate-700 font-poppins font-medium transition-colors"
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#0ea5a4')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#374151')}
               >
                 Doctor
               </a>
@@ -61,7 +71,10 @@ export default function Index() {
               href="https://wa.me/919412005185?text=Hi%20Dr.%20Chauhan!%20I%20would%20like%20to%20book%20a%20free%20consultation."
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-block bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-poppins font-semibold transition-colors duration-300"
+              className="hidden sm:inline-block text-white px-4 py-2 rounded-lg font-poppins font-semibold transition-colors duration-300"
+              style={{ backgroundColor: '#0ea5a4' }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#0d8e8d')}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#0ea5a4')}
             >
               WhatsApp
             </a>

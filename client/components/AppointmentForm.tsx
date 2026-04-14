@@ -152,11 +152,11 @@ export default function AppointmentForm() {
           )}
 
           {error && (
-            <div className="mb-6 bg-red-50 border border-red-200 rounded-lg p-6 flex gap-4">
-              <AlertCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+            <div className="mb-6 border rounded-lg p-6 flex gap-4" style={{ backgroundColor: 'rgba(14, 165, 164, 0.08)', borderColor: 'rgba(14, 165, 164, 0.3)' }}>
+              <AlertCircle className="w-6 h-6 flex-shrink-0 mt-0.5" style={{ color: '#0ea5a4' }} />
               <div>
-                <h3 className="font-semibold text-red-900 mb-2">Error</h3>
-                <p className="text-red-800">{error}</p>
+                <h3 className="font-semibold mb-2" style={{ color: '#0d8e8d' }}>Error</h3>
+                <p style={{ color: '#0ea5a4' }}>{error}</p>
               </div>
             </div>
           )}
