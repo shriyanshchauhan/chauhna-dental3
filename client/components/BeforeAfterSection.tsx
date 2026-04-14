@@ -14,7 +14,7 @@ export default function BeforeAfterSection() {
       before:
         "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F0738500b13194f80be75ea281e939805?format=webp&width=800&height=1200",
       after:
-        "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F0e760fa2b1864ff58b5f28cd0c524b36?format=webp&width=800&height=1200",
+        "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2Fb5072e5c535948eb880e017af0323113?format=webp&width=800&height=1200",
       title: "Complete Smile Restoration",
       treatment: "Dental Implants & Smile Design",
     },
