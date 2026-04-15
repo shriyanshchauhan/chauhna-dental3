@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Calendar, Phone, Mail, User, AlertCircle, CheckCircle, MessageCircle } from "lucide-react";
+import { Calendar, Phone, Mail, User, AlertCircle, CheckCircle, MessageCircle, X } from "lucide-react";
+import { useEffect } from "react";
 
 export default function AppointmentForm() {
   const [formData, setFormData] = useState({
@@ -16,6 +17,17 @@ export default function AppointmentForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [showNotification, setShowNotification] = useState(false);
+
+  useEffect(() => {
+    if (submitted) {
+      setShowNotification(true);
+      const timer = setTimeout(() => {
+        setShowNotification(false);
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [submitted]);
 
   const treatments = [
     "Root Canal Treatment",
