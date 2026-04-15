@@ -77,11 +77,14 @@ export default function HeroSection() {
                     Book Free Consultation
                   </a>
                   <a
-                    href="tel:+919412005185"
-                    className="bg-white hover:bg-gray-100 text-blue-900 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                    href="#appointment-section"
+                    className="bg-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                    style={{ color: '#0ea5a4' }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#f3f4f6')}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#ffffff')}
                   >
-                    <Phone className="w-5 h-5" />
-                    Call Now
+                    <Calendar className="w-5 h-5" />
+                    Book Appointment
                   </a>
                 </div>
               </div>

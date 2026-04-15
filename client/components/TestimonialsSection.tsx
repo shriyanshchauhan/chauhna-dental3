@@ -67,6 +67,33 @@ export default function TestimonialsSection() {
       text: "The laser skin treatment has given me amazing results. My skin looks fresh and glowing. Dr. Chauhan and his team are extremely professional and caring.",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop",
     },
+    {
+      id: 7,
+      name: "Dikshat Sharma",
+      city: "Haripur",
+      rating: 5,
+      treatment: "Orthodontic Treatment",
+      text: "I had an excellent experience with my orthodontic treatment at Chauhan's Dental and Cosmo Laser Centre. Dr. Christy was extremely professional, kind, and attentive throughout the process. She explained every step clearly and made sure I was comfortable at all times. My tooth alignment has improved beautifully, and I'm very happy with the results. The clinic staff were also friendly and helpful, making each visit smooth and pleasant.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+    },
+    {
+      id: 8,
+      name: "Viaml Bhatt",
+      city: "Dehradun",
+      rating: 5,
+      treatment: "Complete Dental Care",
+      text: "I've visited many clinics, but none match the quality and comfort of Chauhan's Dental & Cosmo Laser Centre. The doctors are compassionate, the procedures are painless, and the results are excellent. Without a doubt, the best dental clinic in Dehradun.",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop",
+    },
+    {
+      id: 9,
+      name: "Mahavir Bisht",
+      city: "Dehradun",
+      rating: 5,
+      treatment: "Dental Laminates",
+      text: "I was nervous about getting laminates, but the results at Chauhan's Dental & Cosmo Laser Centre blew me away. My smile looks perfect now. The clinic lives up to its reputation as the best dental clinic in Dehradun.",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

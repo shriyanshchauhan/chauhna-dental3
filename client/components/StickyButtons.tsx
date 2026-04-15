@@ -1,4 +1,4 @@
-import { Phone, MessageCircle } from "lucide-react";
+import { MessageCircle, Calendar } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function StickyButtons() {
@@ -46,13 +46,13 @@ export default function StickyButtons() {
       {isMobile && isVisible && (
         <div className="fixed bottom-0 left-0 right-0 bg-slate-900 border-t-2 shadow-2xl z-40" style={{ borderTopColor: '#0ea5a4' }}>
           <div className="flex gap-0 h-16">
-            {/* Call Button */}
+            {/* Book Appointment Button */}
             <a
-              href="tel:+919412005185"
+              href="#appointment-section"
               className="flex-1 flex items-center justify-center gap-2 text-white hover:bg-slate-800 transition-colors duration-200 border-r border-slate-700"
             >
-              <Phone className="w-5 h-5" />
-              <span className="text-sm font-semibold">Call Now</span>
+              <Calendar className="w-5 h-5" />
+              <span className="text-sm font-semibold">Book</span>
             </a>
 
             {/* WhatsApp Button */}
