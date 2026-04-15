@@ -163,20 +163,13 @@ export default function TestimonialsSection() {
                 {/* Divider */}
                 <div className="border-t border-gray-200 pt-6">
                   {/* Profile Section */}
-                  <div className="flex items-center gap-4">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
-                    <div>
-                      <h4 className="font-poppins font-bold text-slate-900 text-base">
-                        {testimonial.name}
-                      </h4>
-                      <p className="text-gray-600 text-sm font-poppins">
-                        {testimonial.city}
-                      </p>
-                    </div>
+                  <div>
+                    <h4 className="font-poppins font-bold text-slate-900 text-base">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-gray-600 text-sm font-poppins">
+                      {testimonial.city}
+                    </p>
                   </div>
 
                   {/* Treatment Badge */}
