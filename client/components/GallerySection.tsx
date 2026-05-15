@@ -33,20 +33,6 @@ export default function GallerySection() {
       category: "Equipment",
     },
     {
-      id: 4,
-      src: "https://images.unsplash.com/photo-1609286849393-d3ecaf357cb9?w=600&h=400&fit=crop",
-      title: "Laser Treatment Area",
-      caption: "State-of-the-art cosmetic laser equipment",
-      category: "Equipment",
-    },
-    {
-      id: 5,
-      src: "https://images.unsplash.com/photo-1631217314831-c02b2e9de0bb?w=600&h=400&fit=crop",
-      title: "Sterilization Unit",
-      caption: "Highest hygiene and safety standards",
-      category: "Equipment",
-    },
-    {
       id: 6,
       src: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop",
       title: "Clinic Entrance",
