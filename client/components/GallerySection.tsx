@@ -53,6 +53,20 @@ export default function GallerySection() {
       caption: "Professional and accessible clinic entrance",
       category: "Clinic",
     },
+    {
+      id: 7,
+      src: "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2Fc24682799d5a4438aa36ea809132c367?format=webp&width=800&height=1200",
+      title: "Chauhan's Dental & Cosmo Laser Center",
+      caption: "Exterior view of our modern dental clinic",
+      category: "Clinic",
+    },
+    {
+      id: 8,
+      src: "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2Fab8e7b000b19457b88fa8290bd16852a?format=webp&width=800&height=1200",
+      title: "Dr. Deepak Chauhan Certification",
+      caption: "Professional certification and expertise credentials",
+      category: "Clinic",
+    },
   ];
 
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);

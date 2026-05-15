@@ -321,6 +321,52 @@ export default function AppointmentForm() {
           </form>
         </div>
       </div>
+
+      {/* Success Notification Toast */}
+      {showNotification && (
+        <div
+          className="fixed top-8 right-8 max-w-sm w-full mx-4 p-6 rounded-2xl shadow-2xl z-50 animate-slideUp"
+          style={{
+            backgroundColor: "#ffffff",
+            borderLeft: "4px solid #0ea5a4",
+            animation: "slideUp 0.5s ease-out",
+          }}
+        >
+          <div className="flex items-start gap-4">
+            <CheckCircle className="w-6 h-6 flex-shrink-0 mt-0.5" style={{ color: "#0ea5a4" }} />
+            <div className="flex-1">
+              <h3 className="font-semibold text-slate-900 mb-1">
+                Form Submitted Successfully! ✓
+              </h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                Your appointment request has been received. We will contact you shortly via call or WhatsApp.
+              </p>
+            </div>
+            <button
+              onClick={() => setShowNotification(false)}
+              className="flex-shrink-0 p-1 hover:bg-gray-100 rounded transition-colors"
+            >
+              <X className="w-5 h-5 text-gray-400" />
+            </button>
+          </div>
+        </div>
+      )}
+
+      <style>{`
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-slideUp {
+          animation: slideUp 0.5s ease-out;
+        }
+      `}</style>
     </section>
   );
 }
