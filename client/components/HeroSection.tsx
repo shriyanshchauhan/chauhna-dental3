@@ -17,14 +17,14 @@ export default function HeroSection() {
     {
       title: "Advanced Dental & Cosmetic Laser Treatments",
       description: "30+ Years of Trusted Dental Care",
-      image: "https://images.unsplash.com/photo-1606811841689-23ace3c3a136?w=1200&q=80",
-      alt: "Modern dental clinic interior",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F9ce15cc15d4a424981761c82a6bd32f9?format=webp&width=800&height=1200",
+      alt: "Chauhan's Dental & Cosmo Laser Centre exterior",
     },
     {
       title: "Expert Dental Care with Latest Technology",
       description: "Painless and Advanced Treatments",
-      image: "https://images.unsplash.com/photo-1609286849393-d3ecaf357cb9?w=1200&q=80",
-      alt: "Dentist treating patient",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2F1f15749867f54686a0e5d47eefa48330?format=webp&width=800&height=1200",
+      alt: "Modern dental treatment reception area",
     },
   ];
 
